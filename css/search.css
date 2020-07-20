@@ -1,0 +1,184 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+    background-color: #2d2d2d;
+}
+
+@font-face {
+    src: url(../fonts/ConcertOne-Regular.ttf);
+    font-family: 'Concert One';
+}
+
+@font-face {
+    src: url(../fonts/Inder-Regular.ttf);
+    font-family: 'Inder';
+}
+
+@font-face {
+    src: url(../fonts/PatuaOne-Regular.ttf);
+    font-family: 'Patua One';
+}
+
+.search-box {
+    min-height: 550px;
+    width: 1200px;
+    margin: 40px auto;
+    background-color: #212325;
+    border: 2px groove orangered;
+    border-width: 2px 2px;
+    border-radius: 6px;
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
+    cursor: default;
+}
+
+.search-box input {
+    width: 410px;
+    height: 40px;
+    padding: 0px 15px;
+    margin: 35px auto 20px auto;
+    background-color: #161717;
+    color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-color: orangered;
+    border-radius: 10px;
+    font-size: 14px;
+    outline: 4px;
+}
+
+.search-box input::placeholder {
+    text-align: center;
+    color: #919292;
+}
+
+.search-box input:hover , .search-box input:focus {
+    outline: 4px;
+    box-shadow: 0px 20px 32px 0px  rgba(0,0,0,0.3);
+}
+
+.search-box .sep {
+    width: 1000px;
+    height: 1.2px;
+    background-color: rgb(77, 77, 77);
+    position: absolute;
+    top: 95px;
+    right: 0px;
+    left: 0px;
+    margin: 15px auto;
+}
+
+.search-box .fa-search, .search-box .fa-hand-pointer-o{
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    left: 0px;
+    margin: 15px auto;
+    font-size: 250px;
+    color: #2e2e2e;
+}
+
+.search-box .fa-hand-pointer-o {
+    top: 148px;
+    font-size: 70px;
+    right: 30px;
+}
+
+.search-box .icons {
+    position: relative;
+    z-index: 0;
+}
+
+.search-box .lower-body {
+    position: relative;
+    z-index: 3;
+}
+
+.search-box ul {
+    list-style-type: none;
+    text-align: justify;
+    width: 720px;
+    margin: 0px auto;
+}
+
+.search-box ul a {
+    text-decoration: none;
+    color: white;
+}
+
+.search-box ul a li {
+    margin: 30px auto;
+    padding: 10px;
+    height: 94px;
+    border-width: 2px;
+    border-style: groove;
+    border-color: orangered;
+    border-radius: 6px;
+    font-weight: bold;
+    background-color: #1b1b1b;
+    display: none;
+}
+.search-box ul a li:hover , .search-box ul a li:focus {
+    outline: 4px;
+    box-shadow: 0px 20px 32px 0px  rgba(0,0,0,0.3);
+}
+.search-box .lower-body ul a li img {
+    width: 165px;
+    height: 80px;
+    margin: 3px;
+    margin-right: 35px;
+    border-width: 2px;
+    border-style: groove;
+    border-color: white;
+    border-radius: 4px;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
+    float: left;
+}
+
+.search-box ul a li h2 {
+    text-align: justify;
+    margin: 8px 5px 8px 5px;
+    font-family: 'Concert One';
+    letter-spacing: 1.5px;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 2px 2px black;
+}
+
+.search-box ul a li h4 {
+    text-align: justify;
+    margin: 35px 5px 8px 5px;
+    font-family: 'Inder';
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 1.5px 1.5px black;
+}
+
+.search-box ul a li h4 span {
+    font-weight: normal;
+}
+
+.search-box #not-found {
+    position: absolute;
+    top: 280px;
+    right: 0px;
+    left: 0px;
+    margin: 0px auto;
+    display: none;
+    color: #484848;
+    font-size: 60px;
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 1px 1px black;
+    font-family: 'Patua One';
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Login | Depot Games</title>
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/header.css" rel="stylesheet">
+        <link href="css/footer.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/login.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+    </head>
+    <body>
+        <script language="javascript" type="text/javascript" src="header.txt"></script>
+        <div class="login-box">
+            <h1>Login</h1>
+            <div class="login-left">
+                <div class="login-front">
+                    <form action="" method="GET" class="form">
+                        <label for="login-email-field" class="login-email-field">Email</label>
+                        <input type="email" id="login-email-field" name="email" class="animate__animated animate__headShake" required autofocus autocomplete="off">                        
+                        <label for="login-password-field" class="login-password-field">Password</label>
+                        <input type="password" id="login-password-field" name="password" required autocomplete="off">
+                        <input type="checkbox" id="login-rem-check" name="Rem">
+                        <label for="login-rem-check" id="login-rem-lab" >Remember Me!</label>
+                        <input type="submit" id="login-submit-button" value="Log in">
+                    </form>
+                    <h3><pre>Forget Password?</pre></h3>
+                </div>
+                <div class="login-back">
+                    <span class="back-btn fa fa-chevron-circle-left fa-2x"></span>
+                    <h2>Reset Your Password</h2>
+                    <form action="" method="GET" class="formReset">
+                        <label for="login-emailreset-field" class="login-emailreset-field">Email</label>
+                        <input type="email" id="login-emailreset-field" name="emailF" required autocomplete="off">
+                        <input type="submit" id="login-submitreset-button" value="Send Password Reset Email">
+                    </form>
+                </div>
+            </div>
+            <div class="login-separator"></div>
+            <span class="OR">OR</span>
+            <div class="login-right">
+                <button class="btn-google"><a href="#"><i class="fa fa-google fa-2x"></i><span>Log In with Google</span></a></button>
+                <button class="btn-facebook"><a href="#"><i class="fa fa-facebook-square fa-2x"></i><span>Log In with Facebook</span></a></button>
+                <button class="btn-twitter"><a href="#"><i class="fa fa-twitter fa-2x"></i><span>Log In with Twitter</span></a></button>
+            </div>
+            <div class="for-signup">Need an account? <a href="signup.html">Sign up now!</a></div>
+        </div>
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/header.js"></script>
+        <script src="js/login.js"></script>
+        <script language="javascript" type="text/javascript" src="footer.txt"></script>
+    </body>
+</html>

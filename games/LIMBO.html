@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>LIMBO | Depot Games</title>
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/header.css" rel="stylesheet">
+        <link href="../css/footer.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/data.css">
+        <script src="../js/data.js"></script>
+    </head>
+    <body>
+        <script language="javascript" type="text/javascript" src="header.txt"></script>
+        <div class="data-box">
+            <div class="data-img">
+                <img src="" alt="" id="game_pic">
+                <div class="layer"></div>
+                <h1 id="game_name"></h1>
+            </div>
+            <br/>
+            <div class="logo-box"><img src="" alt="" id="game_logo"></div>
+            <h2>Genre<span> : </span><span id="game_genre"></span></h2>
+            <h2>Release Date<span> : </span><span id="game_releaseDate"></span></h2>
+            <h2>Developer<span> : </span><span id="game_developer"></span></h2>
+            <h2>Publisher<span> : </span><span id="game_publisher"></span></h2>
+            <h2>Platform<span> : </span><span id="game_platform"></span></h2>
+            <h2>Description<span> : </span><span id="game_description"></span></h2>
+            <h2>System Requirements</h2>
+            <h2 class="sysReq">Processor<span> : </span><span id="game_processor"></span> .</h2>
+            <h2 class="sysReq">Memory<span> : </span><span id="game_memory"></span> .</h2>
+            <h2 class="sysReq">Graphics<span> : </span><span id="game_graphics"></span> .</h2>
+            <h2 class="sysReq">Storage<span> : </span><span id="game_storage"></span> .</h2>
+            <br/>
+        </div>
+        <script src="../js/jquery-3.4.1.min.js"></script>
+        <script src="../js/header.js"></script>
+        <script>
+            document.getElementById("game_pic").setAttribute("src", "../" + LIMBO.pic);
+            document.getElementById("game_pic").setAttribute("alt", "LIMBO Picture");
+            document.getElementById("game_logo").setAttribute("src", "../" + LIMBO.logo);
+            document.getElementById("game_logo").setAttribute("alt", "LIMBO Logo");
+            document.getElementById("game_logo").setAttribute("title", LIMBO.name + " Logo");
+            document.getElementById("game_name").innerHTML = LIMBO.name;
+            document.getElementById("game_genre").innerHTML = LIMBO.genre;
+            document.getElementById("game_releaseDate").innerHTML = LIMBO.releaseDate;
+            document.getElementById("game_developer").innerHTML = LIMBO.developer;
+            document.getElementById("game_publisher").innerHTML = LIMBO.publisher;
+            document.getElementById("game_platform").innerHTML = LIMBO.platform;
+            document.getElementById("game_description").innerHTML = LIMBO.description;
+            document.getElementById("game_processor").innerHTML = LIMBO.processor;
+            document.getElementById("game_memory").innerHTML = LIMBO.memory;
+            document.getElementById("game_graphics").innerHTML = LIMBO.graphics;
+            document.getElementById("game_storage").innerHTML = LIMBO.storage;
+        </script>
+        <script language="javascript" type="text/javascript" src="footer.txt"></script>
+    </body>
+</html>

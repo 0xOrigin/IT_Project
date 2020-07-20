@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sign-up | Depot Games</title>
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/header.css" rel="stylesheet">
+        <link href="css/footer.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/signup.css">
+    </head>
+    <body>
+        <script language="javascript" type="text/javascript" src="header.txt"></script>
+        <div class="signup-box">
+            <h1>Sign-up</h1>
+            <div class="signup-left">
+                <div class="signup-front">
+                    <button id="signup-form-btn"><i class="fa fa-envelope fa-2x"></i><span>Sign-up with E-mail</span></button>
+                </div>
+                <div class="signup-back">
+                    <span class="back-btn fa fa-chevron-circle-left fa-2x"></span>
+                    <form action="" method="GET" class="form">
+                        <label for="signup-email-field" class="signup-email-field">Email</label>
+                        <input type="email" id="signup-email-field" name="email" required autocomplete="off">
+                        <label for="signup-password-field" class="signup-password-field">Password</label>
+                        <input type="password" id="signup-password-field" name="password" required autocomplete="off">
+                        <label for="signup-conpassword-field" class="signup-conpassword-field">Confirm Password</label>
+                        <input type="password" id="signup-conpassword-field" name="conPass" required autocomplete="off">
+                        <div class="for-right">
+                            <label for="signup-name-field">Your Name</label>
+                            <input type="text" id="signup-name-field" name="Name" autocomplete="off">
+                            <label for="signup-username-field" class="signup-username-field">Username</label>
+                            <input type="text" id="signup-username-field" name="user" pattern="[A-Za-z0-9]+" required autocomplete="off">
+                            <label for="signup-dateofbirth-field" class="signup-dateofbirth-field">Date of Birth</label>
+                            <div class="select-container">
+                                <select class="select-controls select-controls-days" id="select-controls-days" name="days" required>
+                                    <option selected value disabled value="">Day</option>
+                                    <option disabled>-------</option>
+                                </select>
+                                <span class="select-dividor1"></span>
+                                <select class="select-controls select-controls-months" id="select-controls-months" name="months" required>
+                                    <option selected value disabled value="">Month</option>
+                                    <option disabled>-------</option>
+                                </select>
+                                <span class="select-dividor2"></span>
+                                <select class="select-controls select-controls-years" id="select-controls-years" name="years" required>
+                                    <option selected value disabled value="">Year</option>
+                                    <option disabled>-------</option>
+                                </select>
+                            </div>
+                        </div>
+                        <input type="submit" value="Create an account" id="createAcc">
+                    </form>
+                </div>
+            </div>
+            <div class="signup-separator"></div>
+            <span class="OR">OR</span>
+            <div class="signup-right">
+                <button class="btn-google"><a href="#"><i class="fa fa-google fa-2x"></i><span>Sign-up with Google</span></a></button>
+                <button class="btn-facebook"><a href="#"><i class="fa fa-facebook-square fa-2x"></i><span>Sign-up with Facebook</span></a></button>
+                <button class="btn-twitter"><a href="#"><i class="fa fa-twitter fa-2x"></i><span>Sign-up with Twitter</span></a></button>
+            </div>
+            <div class="for-login">Already have an account? <a href="login.html">Login now!</a></div>
+        </div>
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/header.js"></script>
+        <script src="js/signup.js"></script>
+        <script language="javascript" type="text/javascript" src="footer.txt"></script>
+    </body>
+</html>

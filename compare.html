@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Compare | Depot Games</title>
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/header.css" rel="stylesheet">
+        <link href="css/footer.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/compare.css">
+        <script src="js/data.js"></script>
+    </head>
+    <body>
+        <script language="javascript" type="text/javascript" src="header.txt"></script>
+        <div class="compare-box">
+            <h1>Compare Between two Games</h1>
+            <div class="compare-controls">
+                <h2 class="first-head">First game</h2>
+                <h2 class="second-head">Second game</h2>
+                <br/>
+                <div class="fa fa-mail-forward fa-4x left-arrow"></div>
+                <div class="fa fa-mail-reply fa-4x right-arrow"></div>
+                <select name="first-game" id="first-game" title="Choose the First game!" name="firstGame" onchange="checkerViewer();" autofocus>
+                    <option selected disabled value="">Choose</option>
+                    <optgroup label="A .">
+                        <option value="ACO">ASSASSIN’S CREED ORIGINS</option>
+                        <option value="APEX">Apex Legends</option>
+                    </optgroup>
+                    <optgroup label="B .">
+                        <option value="BFV">Battle Field V</option>
+                        <option value="BlackSquad">Black Squad</option>
+                    </optgroup>
+                    <optgroup label="C .">
+                        <option value="CSGO">Counter-Strike: Global Offensive</option>
+                    </optgroup>
+                    <optgroup label="D .">
+                        <option value="Detroit">Detroit: Become Human</option>
+                        <option value="DMC">Devil May Cry 5</option>
+                    </optgroup>
+                    <optgroup label="E .">
+                        <option value="EonAltar">Eon Altar</option>
+                    </optgroup>
+                    <optgroup label="F .">
+                        <option value="FFXV">Final Fantasy XV</option>
+                    </optgroup>
+                    <optgroup label="G .">
+                        <option value="GeometryDash">Geometry Dash</option>
+                        <option value="GTA_V">Grand Theft Auto V</option>
+                    </optgroup>
+                    <optgroup label="H .">
+                        <option value="HITMAN">HITMAN</option>
+                    </optgroup>
+                    <optgroup label="I .">
+                        <option value="INSIDE">INSIDE</option>
+                    </optgroup>
+                    <optgroup label="J .">
+                        <option value="JC4R">Just Cause 4 Reloaded</option>
+                    </optgroup>
+                    <optgroup label="K .">
+                        <option value="Kyn">Kyn</option>
+                    </optgroup>
+                    <optgroup label="L .">
+                        <option value="LIMBO">LIMBO</option>
+                        <option value="LOF">Layers Of Fear</option>
+                        <option value="LOF2">Layers Of Fear 2</option>
+                        <option value="LittleNightmares">Little Nightmares</option>
+                    </optgroup>
+                    <optgroup label="M .">
+                        <option value="MGSVTPP">Metal Gear Solid V</option>
+                    </optgroup>
+                    <optgroup label="N .">
+                        <option value="NFS">Need for Speed Heat</option>
+                    </optgroup>
+                    <optgroup label="O .">
+                        <option value="Outlast">Outlast</option>
+                        <option value="Outlast2">Outlast II</option>
+                    </optgroup>
+                    <optgroup label="P .">
+                        <option value="PUBG">PlayerUnknown's Battlegrounds</option>
+                    </optgroup>
+                    <optgroup label="Q .">
+                        <option value="QATQ">QUBE: Against the Qlock</option>
+                    </optgroup>
+                    <optgroup label="R .">
+                        <option value="RDR2">Red Dead Redemption 2</option>
+                        <option value="RE7B">Resident Evil 7 Biohazard</option>
+                    </optgroup>
+                    <optgroup label="S .">
+                        <option value="SOT">Sea of Thieves</option>
+                    </optgroup>
+                    <optgroup label="T .">
+                        <option value="TWWH3">The Witcher 3: Wild Hunt</option>
+                    </optgroup>
+                    <optgroup label="U .">
+                        <option value="UWO">Uncharted Waters Online</option>
+                    </optgroup>
+                    <optgroup label="V .">
+                        <option value="Vampyr">Vampyr</option>
+                    </optgroup>
+                    <optgroup label="W .">
+                        <option value="WD2">Watch Dogs 2</option>
+                    </optgroup>
+                    <optgroup label="X .">
+                        <option value="Xenonauts">Xenonauts</option>
+                    </optgroup>
+                    <optgroup label="Y .">
+                        <option value="YuGi">Yu-Gi-Oh! Duel Links</option>
+                    </optgroup>
+                    <optgroup label="Z .">
+                        <option value="ZumaDeluxe">Zuma Deluxe</option>
+                    </optgroup>
+                </select>
+                <select name="second-game" id="second-game" title="Choose the Second game!" onchange="checkerViewer();" name="secondGame">
+                    <option selected disabled value="">Choose</option>
+                    <optgroup label="A .">
+                        <option value="ACO">ASSASSIN’S CREED ORIGINS</option>
+                        <option value="APEX">Apex Legends</option>
+                    </optgroup>
+                    <optgroup label="B .">
+                        <option value="BFV">Battle Field V</option>
+                        <option value="BlackSquad">Black Squad</option>
+                    </optgroup>
+                    <optgroup label="C .">
+                        <option value="CSGO">Counter-Strike: Global Offensive</option>
+                    </optgroup>
+                    <optgroup label="D .">
+                        <option value="Detroit">Detroit: Become Human</option>
+                        <option value="DMC">Devil May Cry 5</option>
+                    </optgroup>
+                    <optgroup label="E .">
+                        <option value="EonAltar">Eon Altar</option>
+                    </optgroup>
+                    <optgroup label="F .">
+                        <option value="FFXV">Final Fantasy XV</option>
+                    </optgroup>
+                    <optgroup label="G .">
+                        <option value="GeometryDash">Geometry Dash</option>
+                        <option value="GTA_V">Grand Theft Auto V</option>
+                    </optgroup>
+                    <optgroup label="H .">
+                        <option value="HITMAN">HITMAN</option>
+                    </optgroup>
+                    <optgroup label="I .">
+                        <option value="INSIDE">INSIDE</option>
+                    </optgroup>
+                    <optgroup label="J .">
+                        <option value="JC4R">Just Cause 4 Reloaded</option>
+                    </optgroup>
+                    <optgroup label="K .">
+                        <option value="Kyn">Kyn</option>
+                    </optgroup>
+                    <optgroup label="L .">
+                        <option value="LIMBO">LIMBO</option>
+                        <option value="LOF">Layers Of Fear</option>
+                        <option value="LOF2">Layers Of Fear 2</option>
+                        <option value="LittleNightmares">Little Nightmares</option>
+                    </optgroup>
+                    <optgroup label="M .">
+                        <option value="MGSVTPP">Metal Gear Solid V</option>
+                    </optgroup>
+                    <optgroup label="N .">
+                        <option value="NFS">Need for Speed Heat</option>
+                    </optgroup>
+                    <optgroup label="O .">
+                        <option value="Outlast">Outlast</option>
+                        <option value="Outlast2">Outlast II</option>
+                    </optgroup>
+                    <optgroup label="P .">
+                        <option value="PUBG">PlayerUnknown's Battlegrounds</option>
+                    </optgroup>
+                    <optgroup label="Q .">
+                        <option value="QATQ">QUBE: Against the Qlock</option>
+                    </optgroup>
+                    <optgroup label="R .">
+                        <option value="RDR2">Red Dead Redemption 2</option>
+                        <option value="RE7B">Resident Evil 7 Biohazard</option>
+                    </optgroup>
+                    <optgroup label="S .">
+                        <option value="SOT">Sea of Thieves</option>
+                    </optgroup>
+                    <optgroup label="T .">
+                        <option value="TWWH3">The Witcher 3: Wild Hunt</option>
+                    </optgroup>
+                    <optgroup label="U .">
+                        <option value="UWO">Uncharted Waters Online</option>
+                    </optgroup>
+                    <optgroup label="V .">
+                        <option value="Vampyr">Vampyr</option>
+                    </optgroup>
+                    <optgroup label="W .">
+                        <option value="WD2">Watch Dogs 2</option>
+                    </optgroup>
+                    <optgroup label="X .">
+                        <option value="Xenonauts">Xenonauts</option>
+                    </optgroup>
+                    <optgroup label="Y .">
+                        <option value="YuGi">Yu-Gi-Oh! Duel Links</option>
+                    </optgroup>
+                    <optgroup label="Z .">
+                        <option value="ZumaDeluxe">Zuma Deluxe</option>
+                    </optgroup>
+                </select>
+                <div class="fa fa-long-arrow-down fa-5x bottom-arrow"></div>
+                <button title="Click to Compare" onclick="firstGameChanges();secondGameChanges();checkerViewer();" id="compare-btn">Compare</button>
+            </div>
+            <div class="compare-data">
+                <span class="fa fa-chevron-circle-left fa-3x back-btn" title="Back"></span>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="first-td"></td>
+                            <th id="first-th">
+                                <img src="" alt="" id="firstLogo">
+                                <div class="th-layer"></div>
+                                <a href="" id="firstLink"><h2 id="firstName"></h2></a>
+                            </th>
+                            <th id="second-th">
+                                <img src="" alt="" id="secondLogo">
+                                <div class="th-layer"></div>
+                                <a href="" id="secondLink"><h2 id="secondName"></h2></a>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td class="titles"><strong>Genre</strong></td>
+                            <td id="firstGenre" class="data"></td>
+                            <td id="secondGenre" class="data"></td>
+                        </tr>
+                        <tr>
+                            <td class="titles"><strong>Release Date</strong></td>
+                            <td id="firstReleaseDate" class="data"></td>
+                            <td id="secondReleaseDate" class="data"></td>
+                        </tr>
+                        <tr>
+                            <td class="titles"><strong>Developer</strong></td>
+                            <td id="firstDeveloper" class="data"></td>
+                            <td id="secondDeveloper" class="data"></td>
+                        </tr>
+                        <tr>
+                            <td class="titles"><strong>Publisher</strong></td>
+                            <td id="firstPublisher" class="data"></td>
+                            <td id="secondPublisher" class="data"></td>
+                        </tr>
+                        <tr>
+                            <td class="titles"><strong>Platform</strong></td>
+                            <td id="firstPlatform" class="data"></td>
+                            <td id="secondPlatform" class="data"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="sysReq titles"><strong>System Requirements</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="titles"><strong>Processor</strong></td>
+                            <td id="firstProcessor" class="data"></td>
+                            <td id="secondProcessor" class="data"></td>
+                        </tr>
+                        <tr>
+                            <td class="titles"><strong>Memory</strong></td>
+                            <td id="firstMemory" class="data"></td>
+                            <td id="secondMemory" class="data"></td>
+                        </tr>
+                        <tr>
+                            <td class="titles"><strong>Graphics</strong></td>
+                            <td id="firstGraphics" class="data"></td>
+                            <td id="secondGraphics" class="data"></td>
+                        </tr>
+                        <tr>
+                            <td class="titles"><strong>Storage</strong></td>
+                            <td id="firstStorage" class="data"></td>
+                            <td id="secondStorage" class="data"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/header.js"></script>
+        <script src="js/compare.js"></script>
+        <script language="javascript" type="text/javascript" src="footer.txt"></script>
+    </body>
+</html>

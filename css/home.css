@@ -1,0 +1,263 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #2d2d2d;
+    text-align: justify;
+    position: relative;
+}
+
+@font-face {
+    src: url(../fonts/Antic-Regular.ttf);
+    font-family: 'Antic';
+}
+
+@font-face {
+    src: url(../fonts/Itim-Regular.ttf);
+    font-family: 'Itim';
+}
+
+@font-face {
+    src: url(../fonts/Actor-Regular.ttf);
+    font-family: 'Actor';
+}
+
+@font-face {
+    src: url(../fonts/Aldrich-Regular.ttf);
+    font-family: 'Aldrich';
+}
+
+.main-box {
+    position: relative;
+    width: 100%;
+}
+
+.main-box #slider {
+    position: relative;
+    height: 500px;
+    background-color: #242526;
+}
+
+.main-box #slider button {
+    border-color: orangered;
+    background-color: #242526;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    width: 40px;
+    height: 50px;
+}
+
+.main-box #slider .prew {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    margin: auto 0px;
+    border-width: 2px 0px 2px 0px;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.main-box #slider .next {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    margin: auto 0px;
+    border-width: 2px 0px 2px 0px;
+    border-radius: 10px 0px 0px 10px;
+    box-shadow: -1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.main-box #slider #box img {
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+}
+
+.main-box #slider .caption {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    margin: 140px auto;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Itim';
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 2px 2px black;
+}
+
+.main-box #slider .subcaption {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    margin: 220px auto;
+    width: 810px;
+    text-align: center;
+    line-height: 33px;
+    font-size: 22px;
+    font-family: 'Antic';
+    color: white;
+    -webkit-text-stroke-color: black;
+    text-shadow: 2px 2px black;
+}
+
+.main-box #slider .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #242526;
+    opacity: 0.70;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+}
+
+.hotGames-box {
+    position: relative;
+    text-align: justify;
+    min-height: 400px;
+    min-width: 1360px;
+    background-color: rgb(43, 43, 43);
+    width: 100%;
+}
+
+.hotGames-box .down-icon {
+    display: inline-block;
+    text-align: center;
+    width: 104px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: -100px;
+    margin: 0px auto;
+    color: #908d8d;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 0px 3px black;
+    opacity: 0.5;
+    padding-bottom: 20px;
+    cursor: pointer;
+    animation-duration: 2.8s;
+    animation-delay: 1.5s;
+    animation-iteration-count: 2;
+    animation-fill-mode: both;
+    -webkit-animation-name: shakeY;
+    animation-name: shakeY;
+}
+
+.hotGames-box .hG-b {
+    position: relative;
+    min-height: 570px;
+    margin: 104px 0px 0px 0px;
+    cursor: default;
+    background-color: #1f1f1f;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.hotGames-box .hG-b h1 {
+    display: block;
+    font-family: 'Actor';
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 40px;
+    -webkit-text-stroke-width: 0.6px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 3px 3px black;
+}
+
+.hotGames-box .hG-b .sep {
+    width: 260px;
+    height: 1px;
+    background-color: #6E6F72;
+    position: absolute;
+    top: 85px;
+    left: 0px;
+    right: 0px;
+    margin: 0px auto;
+}
+
+.hotGames-box .hG-b .flex-box1, .hotGames-box .hG-b .flex-box2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hotGames-box .hG-b .hotgame {
+    position: relative;
+    margin: 30px;
+    height: 155px;
+    width: 380px;
+    padding-top: 0.5px;
+    border-width: 2px;
+    border-style: groove;
+    border-color: orangered;
+    border-radius: 6px;
+    font-weight: bold;
+    background-color: #1b1b1b;
+    box-shadow: 0px 20px 32px rgba(0, 0, 0, 0.2);
+}
+
+.hotGames-box .hG-b .hotgame:hover, .hotGames-box .hG-b .hotgame:focus {
+    box-shadow: 0px 20px 32px rgba(0, 0, 0, 0.6);
+}
+
+.hotGames-box .hG-b a {
+    display: contents;
+    text-decoration: none;
+    color: white;
+}
+
+.hotGames-box .hG-b a .hotgame .game-img {
+    height: 150px;
+    width: 375px;
+    border-width: 2px;
+    border-style: groove;
+    border-color: white;
+    border-radius: 3px;
+    box-shadow: 0px 20px 32px rgba(0, 0, 0, 0.2);
+}
+
+.hotGames-box .hG-b a .hotgame .div-layer {
+    display: inline-block;
+    background-color: #242526;
+    opacity: 0.60;
+    background-size: cover;
+    height: 150px;
+    width: 375px;
+    position: absolute;
+    top: 2.5px;
+    left: 2px;
+    border-radius: 3px;
+}
+
+.hotGames-box .hG-b a .hotgame .game-name {
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    top: 76px;
+    left: 0px;
+    right: 0px;
+    margin: 0px auto;
+    color: white;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 2px 2px black;
+    font-family: 'Aldrich';
+    font-size: 20px;
+}

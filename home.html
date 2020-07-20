@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home | Depot Games</title>
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/header.css" rel="stylesheet">
+        <link href="css/footer.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <script src="js/data.js"></script>
+    </head>
+    <body>
+        <script language="javascript" type="text/javascript" src="header.txt"></script>
+        <div style="display: none;">
+            <script type="text/javascript">
+                if (document.images) {
+                    img1 = new Image();
+                    img2 = new Image();
+                    img3 = new Image();
+                    img4 = new Image();
+                    img5 = new Image();
+                    img6 = new Image();
+
+                    img1.src = "images/1.jpg";
+                    img2.src = "images/2.jpg";
+                    img3.src = "images/3.jpg";
+                    img4.src = "images/4.jpg";
+                    img5.src = "images/5.jpg";
+                    img6.src = "images/6.jpg";
+                }
+            </script>
+        </div>
+        <div class="main-box">
+            <div id="slider">
+                <div id="box">
+                    <img src="images/6.jpg" alt="Games Images" id="sliderImg"/>
+                </div>
+                <div class="layer"></div>  
+                <h1 class="caption">Join the Battle</h1>
+                <div class="subcaption">For those in need of some fun and new ways to stay occupied,
+                    we’ve put together a list of currently free games
+                    that can hopefully play even a small part in bringing you some virtual comfort,
+                    escape, and togetherness right now.
+                </div>
+                <button class="prew fa fa-chevron-circle-left" title="Previous" id="Previous"></button>
+                <button class="next fa fa-chevron-circle-right" title="Next" id="Next"></button>
+            </div>
+            <div id="hot_games"></div>
+            <div class="hotGames-box">
+                <a href="#hot_games" style="text-decoration: none;"><div class="fa fa-chevron-down fa-5x down-icon"></div></a>
+                <div class="hG-b">
+                    <h1 class="hot-head">Hot Games</h1>
+                    <div class="sep"></div>
+                    <br/>
+                    <div class="flex-box1">
+                        <a href="games/CounterStrike_Global_Offensive.html">
+                            <div class="hotgame">
+                                <img src="" alt="" id="CSGO_Logo" class="game-img">
+                                <div class="div-layer"></div>
+                                <h2 id="CSGO_name" class="game-name"></h2>
+                            </div>
+                        </a>
+                        <a href="games/PUBG.html">
+                            <div class="hotgame">
+                                <img src="" alt="" id="PUBG_Logo" class="game-img">
+                                <div class="div-layer"></div>
+                                <h2 id="PUBG_name" class="game-name"></h2>
+                            </div>
+                        </a>
+                        <a href="games/GTA_V.html">
+                            <div class="hotgame">
+                                <img src="" alt="" id="GTAV_Logo" class="game-img">
+                                <div class="div-layer"></div>
+                                <h2 id="GTAV_name" class="game-name"></h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="flex-box2">
+                        <a href="games/Black_Squad.html">
+                            <div class="hotgame">
+                                <img src="" alt="" id="BlackSquad_Logo" class="game-img">
+                                <div class="div-layer"></div>
+                                <h2 id="BlackSquad_name" class="game-name"></h2>
+                            </div>
+                        </a>
+                        <a href="games/Outlast.html">
+                            <div class="hotgame">
+                                <img src="" alt="" id="Outlast_Logo" class="game-img">
+                                <div class="div-layer"></div>
+                                <h2 id="Outlast_name" class="game-name"></h2>
+                            </div>
+                        </a>
+                        <a href="games/Outlast_2.html">
+                            <div class="hotgame">
+                                <img src="" alt="" id="Outlast2_Logo" class="game-img">
+                                <div class="div-layer"></div>
+                                <h2 id="Outlast2_name" class="game-name"></h2>
+                            </div>
+                        </a>
+                    </div>
+                    <br/><br/>
+                </div>
+            </div>
+        </div>
+        <script language="javascript" type="text/javascript" src="footer.txt"></script>
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/header.js"></script>
+        <script src="js/home.js"></script>
+        <script>
+            document.getElementById("CSGO_Logo").setAttribute("src", CSGO.logo);
+            document.getElementById("CSGO_name").innerHTML = CSGO.name;
+            document.getElementById("Outlast_Logo").setAttribute("src", Outlast.logo);
+            document.getElementById("Outlast_name").innerHTML = Outlast.name;
+            document.getElementById("Outlast2_Logo").setAttribute("src", Outlast2.logo);
+            document.getElementById("Outlast2_name").innerHTML = Outlast2.name;
+            document.getElementById("PUBG_Logo").setAttribute("src", PUBG.logo);
+            document.getElementById("PUBG_name").innerHTML = PUBG.name;
+            document.getElementById("GTAV_Logo").setAttribute("src", GTA_V.logo);
+            document.getElementById("GTAV_name").innerHTML = GTA_V.name;
+            document.getElementById("BlackSquad_Logo").setAttribute("src", BlackSquad.logo);
+            document.getElementById("BlackSquad_name").innerHTML = BlackSquad.name;
+        </script>
+    </body>
+</html>

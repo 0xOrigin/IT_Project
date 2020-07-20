@@ -1,0 +1,282 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+    background-color: #2d2d2d;
+}
+
+@font-face {
+    src: url(../fonts/Actor-Regular.ttf);
+    font-family: 'Actor';
+}
+
+@font-face {
+    src: url(../fonts/PatuaOne-Regular.ttf);
+    font-family: 'Patua One';
+}
+
+@font-face {
+    src: url(../fonts/Alatsi-Regular.ttf);
+    font-family: 'Alatsi';
+}
+
+@font-face {
+    src: url(../fonts/Aldrich-Regular.ttf);
+    font-family: 'Aldrich';
+}
+
+@font-face {
+    src: url(../fonts/OpenSans-Regular.ttf);
+    font-family: 'Open Sans';
+}
+
+.compare-box {
+    min-height: 525px;
+    width: 1200px;
+    margin: 40px auto;
+    background-color: #212325;
+    border: 2px groove orangered;
+    border-width: 2px 2px;
+    border-radius: 6px;
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
+    cursor: default;
+}
+
+.compare-box h1 {
+    background-color: #1c1c1d;
+    margin: 60px 0px 30px 0px;
+    color: white;
+    font-family: 'Actor';
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 40px;
+    border-width: 2px 0px;
+    border-style: groove;
+    border-color: orangered;
+    box-shadow: 0px 16px 32px 0px  rgba(0,0,0,0.2);
+    padding: 4px;
+    cursor: default;
+}
+
+.compare-box .compare-controls .first-head , .compare-box .compare-controls .second-head {
+    display: inline-block;
+    font-family: 'Patua One';
+    color: #484848;
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 1px 1px black;
+    font-size: 33px;
+}
+
+.compare-box .compare-controls {
+    position: relative;
+    top: 35px;
+}
+
+.compare-box .compare-controls .first-head {
+    position: absolute;
+    left: 180px;
+    top: 15px;
+}
+
+.compare-box .compare-controls .second-head {
+    position: absolute;
+    right: 180px;
+    top: 15px;
+}
+
+.compare-box .compare-controls .left-arrow {
+    transform: rotate(90deg);
+    color: #3b3b3c;
+    position: absolute;
+    left: 350px;
+    top: 38px;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 1px 1px black;
+}
+
+.compare-box .compare-controls .right-arrow {
+    transform: rotate(-90deg);
+    color: #3b3b3c;
+    position: absolute;
+    right: 390px;
+    top: 38px;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 1px 1px black;
+}
+
+.compare-box .compare-controls #first-game , .compare-box .compare-controls #second-game {
+    background-color: #4e4e4e;
+    outline: 4px;
+    margin: 103px 80px 20px;
+    width: 240px;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 14px;
+    border-color: black;
+    border-width: 0.8px;
+    border-radius: 3px;
+    border-style: solid;
+    color: white;
+    cursor: pointer;
+    font-family: 'Alatsi';
+}
+
+.compare-box .compare-controls .bottom-arrow {
+    color: #3b3b3c;
+    position: absolute;
+    top: 145px;
+    right: 0px;
+    left: 0px;
+    margin: 10px auto;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 1px 1px black;
+}
+
+.compare-box .compare-controls button {
+    background-color: #1c1d1d;
+    border-width: 2px;
+    border-style: groove;
+    border-color: orangered;
+    border-radius: 6px;
+    color: orangered;
+    height: 40px;
+    width: 320px;
+    text-align: center;
+    padding: 2px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 80px auto 45px;
+    display: block;
+    font-family: 'Alatsi';
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.15);
+    cursor: pointer;
+    outline: 2px;
+}
+
+.compare-box .compare-controls button:hover {
+    box-shadow: 0px 20px 32px 0px  rgba(0,0,0,0.3);
+}
+
+.compare-box .compare-data {
+    display: none;
+    margin: 10px 10px 20px 10px;
+    position: relative;
+}
+
+.compare-box .compare-data .back-btn {
+    cursor: pointer;
+    color: orangered;
+    position: absolute;
+    top: 13px;
+    left: 75px;
+}
+
+.compare-box .compare-data table {
+    margin: 10px auto; 
+    display: inline-block;
+}
+
+.compare-box .compare-data table tr td , .compare-box .compare-data table tr th{
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 6px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+
+.compare-box .compare-data table {
+    border-width: 0px;
+    border-style: groove;
+    border-color: black;
+    border-radius: 0px;
+}
+
+.compare-box .compare-data table tr .first-td {
+    border-width: 0px;
+    border-style: groove;
+    border-color: black;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.0);
+}
+
+.compare-box .compare-data table tr td {
+    padding: 10px;
+    color: white;
+    font-family: 'Open Sans';
+}
+
+.compare-box .compare-data table tr th{
+    height: 80px;
+    padding-top: 3px;
+    background-color: black;
+    position: relative;
+}
+
+.compare-box .compare-data table tr .sysReq {
+    border-width: 3px 2px;
+    border-style: solid;
+    border-color: black;
+}
+
+.compare-box .compare-data table .data {
+    width: 360px;
+    font-size: 14px;
+}
+
+.compare-box .compare-data table #firstLogo , .compare-box .compare-data table #secondLogo{
+    width: 375px;
+    height: 72px;
+    border-width: 2px;
+    border-style: groove;
+    border-color: white;
+    border-radius: 6px;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+.compare-box .compare-data table #firstName , .compare-box .compare-data table #secondName{
+    position: absolute;
+    top: 35px;
+    color: white;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 2px 2px black;
+    font-family: 'Aldrich';
+    font-size: 20px;
+}
+
+.compare-box .compare-data table a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+.compare-box .compare-data table .th-layer {
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    left: 3px;
+    background-color: #242526;
+    opacity: 0.60;
+    background-size: cover;
+    width: 375px;
+    height: 72px;
+    border-radius: 6px;
+}
+
+.compare-box .compare-data table .titles {
+    font-size: 16px;
+    background-color: #2f2f2f;
+}
