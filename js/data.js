@@ -122,6 +122,7 @@ var CSGO = {
     processor: "Intel  Core i7-4790 or Equivalent / AMD Ryzen 3 1300X",
     memory: "12 GB RAM",
     graphics: "NVIDIA GeForce® GTX 1060 6GB / AMD Radeon™ RX 580 8GB",
+    storage: "50 GB available space"
 },
 
     NFS = {

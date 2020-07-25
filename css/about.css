@@ -43,7 +43,7 @@ body {
 }
 
 .about-box {
-    height: 685px;
+    height: 750px;
     width: 1200px;
     margin: 40px auto;
     background-color: #212325;
@@ -135,20 +135,20 @@ body {
 
 .about-box table tr .arrows {
     color: #087419;
-    font-size: 20px;
+    font-size: 22px;
     font-family: 'Basic';
     text-align: left;
-    font-weight: bold;
-    text-shadow: 1px 1px #000000
+    font-weight: unset;
+    text-shadow: 1px 1px #000000;
+    -webkit-text-stroke: 0.2px black;
 }
 
 .about-box table tr .works {
-    color: #FD7AFD;
+    color: #ff2f00;
     font-size: 20px;
     font-family: 'Basic';
-    text-align: left;
-    font-weight: bold;
-    text-shadow: 2px 2px #ff0000;
-    -webkit-text-stroke: 1px black;
+    font-weight: revert;
+    text-shadow: 1px 2px black;
+    -webkit-text-stroke: 0.2px black;
     text-align: center;
 }

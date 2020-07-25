@@ -71,6 +71,7 @@ body {
 .compare-box .compare-controls .first-head , .compare-box .compare-controls .second-head {
     display: inline-block;
     font-family: 'Patua One';
+    font-weight: unset;
     color: #484848;
     -webkit-text-stroke-width: 0.2px;
     -webkit-text-stroke-color: black;
@@ -250,10 +251,11 @@ body {
     position: absolute;
     top: 35px;
     color: white;
-    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-width: 0.2px;
     -webkit-text-stroke-color: black;
     text-shadow: 2px 2px black;
     font-family: 'Aldrich';
+    font-weight: normal;
     font-size: 20px;
 }
 
